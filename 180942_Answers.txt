@@ -1,0 +1,49 @@
+Exercise 5:
+Output:
+    Person(string,string,int) called
+    Student(string,string,int,float) called
+    Person(string,string,int) called
+    Faculty(string,string,int,int,int) called
+   ~Faculty() called
+   ~Person() called
+   ~Student() called
+   ~Person() called
+
+
+
+
+
+Exercise 6:
+a)
+Age is protected because it should be accessible by other child classes but first name and lst name is private because it cannot be accessed directly outside the classes without getters and setters.
+
+b)
+Error:
+Person::first_name is inaccessible
+Person::last_name is inaccessible
+
+c)
+We got this error because class Person is inherited in a Public mode and private members of class Person are inaccessible in other child classes i.e Student class. We have to use getters and setters to avoid this error.
+
+Exercise 7:
+Output:
+Person(string,string,int) called
+    Student(string,string,int,float) called
+    Person(string,string,int) called
+    Faculty(string,string,int,int,int) called
+    Ted Thompson is 22 years old, his cgpa is 3.91
+    Richard Karp is 45 years old, Number of Courses are 2, Telephone Extension is 420
+   ~Faculty() called
+   ~Person() called
+   ~Student() called
+   ~Person() called
+   Press any key to continue . . .
+
+
+Exercise 8:
+
+There was no change in the ouput when inheritance type changed from Public to Protected.
+
+Exercise 9:
+
+There was no change in the ouput when inheritance type changed from Public to Private. Although, its member functions cannot be accessed outside the class.
